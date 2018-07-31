@@ -18,7 +18,7 @@
 
 #heading{
 	color: white;
-	font-weight: bold;
+	font-weight: normal;
 	margin-top: 27vw;
 	float:right;
 	text-align: center;
@@ -44,7 +44,6 @@
 #brand{
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.8em;
-	font-weight: normal;
 	color: white;
 }
 
