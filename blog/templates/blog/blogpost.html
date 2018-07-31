@@ -1,0 +1,20 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+<div style="font-size: 4em;color:#C1C1C1;font-family:'Roboto',sans-serif;">Blogs</div>
+
+	<div id="posts" class="col-md-12">
+		{% if user.is_authenticated %}
+			<a class="btn btn-primary glyphicon glyphicon-pencil" href="{% url 'editpost' pk=post.pk %}">edit</a>
+		{% endif %}
+		<h2 id="posttitle" align="center">{{ post.title }}</h2>
+		<hr width="80%">
+		<div>{{ post.text|linebreaksbr }}</div>
+		<br>
+		<div id="date">
+			Published on: {{ post.published_date }}
+		</div>
+	</div>
+
+
+{% endblock %}

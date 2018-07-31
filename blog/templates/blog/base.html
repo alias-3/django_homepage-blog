@@ -34,6 +34,9 @@
             <ul class="nav navbar-nav navbar-right">
               <li><a class="glyphicon glyphicon-earphone" href="tel:9762375482"> Call</a></li>
               <li><a class="glyphicon glyphicon-user" data-toggle="modal" data-target="#myModal" style="cursor: pointer"> Login</a></li>
+              {% if user.is_authenticated %}
+              <li><a href="{%url 'newpost' %}" class="glyphicon glyphicon-plus"> Add</a></li>
+              {% endif %}
             </ul>
           </div>
         </div>
