@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anurag Wani</title>
+    <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <script src="{%static 'js/jquery-3.2.1.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+      <link rel="shortcut icon" href="{%static 'img/favicon.ico'%}" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="{%static 'css/styles.css'%}">
+  </head>
+<body>
+    <nav id="nav" class="navbar navbar-custom" data-spy="affix" data-offset-top="0" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+            </button>
+             <a class="navbar-brand" href="mailto:wanianurag2@gmail.com" id="brand"><strong>@anurag_wani</strong></a></div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a class="glyphicon glyphicon-home" href=" / "></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="glyphicon glyphicon-earphone" href="tel:9762375482"> Call</a></li>
+              <li><a class="glyphicon glyphicon-user" data-toggle="modal" data-target="#myModal" style="cursor: pointer"> Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav><!--Navbar ends-->
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>     
+</body>
+
+
+</html>

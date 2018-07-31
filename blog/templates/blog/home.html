@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Anurag Wani</title>
+
+    <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+    <link rel="shortcut icon" href="{%static 'img/favicon.ico'%}" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="{%static 'css/styles.css'%}">
+    <script src="{%static 'js/jquery-3.2.1.min.js'%}"></script>
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+  </head>
+
+
+  <body class="container-fluid" style="padding: 0">
+   
+    <div class="jumbotron" style="border-radius: 0;"><div id="heading">Welcome</div></div>
+   
+  <!--Navbar starts-->
+    <nav id="nav" class="navbar navbar-custom" data-spy="affix" data-offset-top="524" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+            </button>
+             <a class="navbar-brand" href="mailto:wanianurag2@gmail.com" id="brand"><strong>@anurag_wani</strong></a></div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a class="glyphicon glyphicon-home" href=" / "></a></li>
+              <li><a href="#About"> About</a></li>
+              <li><a href="#Interests"> Interests</a></li>
+              <li><a href="#slideshow"> Education</a></li>
+              <li><a href="{% url 'blog_list' %}"> Blogs</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" style="cursor: pointer"> site-info
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#site-info">Functionality</a>
+                  </li>
+                  <li class="hidden-xs hidden-sm"><a href="#lang">Langauges</a></li>
+                </ul>
+              </li>
+               <li><a href="#finder"> Find Me</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="glyphicon glyphicon-earphone" href="tel:9762375482"> Call</a></li>
+              <li><a class="glyphicon glyphicon-user" data-toggle="modal" data-target="#myModal" style="cursor: pointer"> Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav><!--Navbar ends-->
+
+    <!--About-->
+    <div class="container" id="About"><div>ABOUT</div><hr>
+      <div><p>Hello I'm Anurag Wani, a second year undergrad student of Information Technology, in the MIT College Of Engineering. Interested in learning Web Development I have tried out developing my webpage. Along with web development,I like exploring various arenas of computer science. I am also interested in Machine learning and trying my efforts in learning the same.<span style="display: block">I am a resident of Pune since last 10 years, hail from Kopargoan and also lived in Jamshedpur and Ahmednagar.</span></p></div>
+    </div>
+   
+
+    <!--interests-->
+    <div class="container" id="Interests">
+       
+          <div>INTERESTS
+          </div><hr>
+       <div class="row">
+          <div class="col-xs-4 col-md-4 interestrow" style="font-family: 'Courgette', cursive;text-align: left;color: black">
+          <img src="{%static 'img/painting.png'%}" style="width: 40%; height: 40%"> Painting
+          </div>
+          <div class="col-xs-4 col-md-4" style="font-family: 'Courgette', cursive;text-align: left;color: black">
+          <img src="{%static 'img/music.png'%}" style="width: 40%; height: 40%"> Songs
+          </div>
+          <div class="col-xs-4 col-md-4" style="font-family: 'Courgette', cursive;text-align: left;color: black">
+          <img src="{%static 'img/chef.png'%}" style="width: 40%; height: 40%"> Cooking
+          </div>
+          <div class="col-xs-4 col-md-4" style="font-family: 'Courgette', cursive;text-align: left;color: black">
+          <img src="{%static 'img/sports.png'%}" style="width: 40%; height: 40%"> Sports
+          </div>
+          <div class="col-xs-4 col-md-4" style="font-family: 'Courgette', cursive;text-align: left;color: black">
+          <img src="{%static 'img/game.png'%}" style="width: 40%; height: 40%"> Gaming
+          </div>
+          <div class="col-xs-4 col-md-4" style="font-family: 'Courgette', cursive;text-align: left;color: black">
+          <img src="{%static 'img/tech.png'%}" style="width: 40%; height: 40%"> Tech
+          </div>
+        </div>
+      </div>     
+    </div>
+      
+    <!--site info-->
+<div class="container">
+  <div class="row">
+  <div id="site-info" class="container col-xs-12 col-md-8 col-lg-8" >
+    <div>Site-Info</div><hr style="width: 50%"><p style="text-align: center">This Html site is styled by Css and developed on the foundation of Bootstrap and Django(python) framework. Prominent features include real time blog editing(with help of django),navbar,collapsible menu,button,jumbotron,containers,glyphicons,direct dial telephone,login form,modal,embedded video,slideshow,article,dropdown menu,embedded map and others.The page is optimized for both desktop and mobile interface and is under development for adding more django apps and functionalities.</p>
+  </div>
+  <div  id="lang" class="container col-lg-4 col-md-4 visible-lg visible-md"><div>Framework and Languages</div><hr>
+    <ul><li>HTML</li><li>CSS</li><li>BOOTSTRAP</li><li>JS, jQuery</li><li>DJANGO</li></ul>
+  </div>  
+  </div>
+</div>
+
+  <!--kogin modal-->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">login</h4>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <form>
+              <div class="col-md-6 col-sm-8" style="float: none">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control validate" id="email" placeholder=" Enter email">
+              </div></div>
+              <div class="col-md-6 col-sm-8" style="float: none">
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control validate" id="pwd" placeholder="Enter password">
+              </div></div>
+              <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-default" style="cursor: pointer">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="container">
+  <div id="slideshow">EDUCATION</div>
+  <div id="myCarousel" class="carousel slide" style="border-radius: 20px" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" style="height: auto;">
+
+      <div class="item active">
+        <img src="{%static 'img/mitcoe.jpg'%}" alt="MIT College Of Engineering" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>MIT College Of Engineering</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="{%static 'img/fc.jpg'%}" alt="Fergusson College" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Fergusson College</h3>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="{%static 'img/jpnv.jpg'%}" alt="Jnana Prabodhini" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Jnana Prabodhini</h3>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<div id="finder">FIND ME</div><hr style="width: 
+  50%">
+<div class="container"><a href="https://www.google.co.in/maps/place/MIT+College+of+Engineering,+Rambaug+Colony,+Kothrud,+Pune,+Maharashtra+411038/@18.5185069,73.8144832,18z/data=!4m5!3m4!1s0x3bc2bfa2515ce741:0x349ddf824466170d!8m2!3d18.5187098!4d73.815807"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1891.6149870102047!2d73.81448317488463!3d18.5185068835636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfa2515ce741%3A0x349ddf824466170d!2sMIT+College+of+Engineering%2C+Rambaug+Colony%2C+Kothrud%2C+Pune%2C+Maharashtra+411038!5e0!3m2!1sen!2sin!4v1516783888888" width=100% height="350" frameborder="0" allowfullscreen></iframe></a></div>
+
+<div class="container-fluid" id="footer" style="margin-top: 5vw">
+	<div class="container">
+  <div class="row">
+    <div class="col-sm-6"><h3>Contact:</h3>
+  <div id="footfont">Mobile: 9762375482<div>Email: wanianurag2@gmail.com</div><div>Hours:8 am to 4pm</div></div>
+    </div>
+    <div class="col-sm-6"><h3>Address:</h3>
+      <div id="footfont">Flat-203, Good Earth apt., Dattawadi, Akurdi, Pune-35</div>
+    </div>    
+  </div><br><br><br>
+     <div style="text-align: center">&copy; Anurag Wani |siteworks</div></div>
+ </div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+<div style="font-size: 4em;color:#C1C1C1;font-family:'Roboto',sans-serif;">Blogs</div>
+
+	{% for post in posts %}
+	<div id="posts" class="col-md-12">
+	<h2 id="posttitle" align="center">{{ post.title }}</h2>
+	<hr width="80%">
+		<div>{{ post.text|linebreaksbr }}</div>
+		<div id="date">
+			Published on: {{ post.published_date }}
+		</div>
+	</div>
+	{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,370 @@
+
+.jumbotron{
+	margin:0;
+	padding:0;
+	background-image: url(../img/dubai.jpg);
+	background-repeat: no-repeat;
+	height:40vw;
+	background-size: 100%;
+	background-attachment: fixed;
+	width: 100%;
+}
+
+.back{
+	background-image: url(../img/back.png);
+	background-size: 20%;
+	color: black;
+}
+
+.affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+
+#heading{
+	color: white;
+	font-weight: bold;
+	margin-top: 27vw;
+	float:right;
+	text-align: center;
+	font-family: 'Roboto',sans-serif;
+	font-size: 8vw;
+	margin-left: 15px;
+}
+
+
+.navbar-custom{
+	background: linear-gradient(to right, #7b4397 0%,#b5238a 59%,#dc2430 87%);
+	color: white;
+	border-radius: 0;
+	margin: 0;
+	box-shadow: 0 6px 6px 0 rgba(0,0,0,0.4), 0 0 0 2px rgba(0,0,0,0.08);
+}
+
+#myNavbar{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+#brand{
+	font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+	color: white;
+}
+
+.glyphicon{
+	font-size: 1.2em;
+	color: white;
+}
+
+.navbar-nav>li>a{
+
+	color: white;
+}
+
+.navbar-nav>li>a:hover{
+
+	color:  #1E5080;
+	border-radius: 8px 8px;
+}
+
+.navbar-nav>li>a:active{
+
+	color:  #1E5080;
+	border-radius: 8px 8px;
+}
+
+.navbar-toggle{
+	border-color: white;
+	border-radius: 10px 10px;
+}
+
+.icon-bar{
+	background-color: white;
+}
+
+#About{
+	margin-top: 0;
+	border-radius: 0;
+	padding-top: 3vw;
+}
+#About hr{
+	width: 50%;
+	background-color: #404040 ;
+	padding: 0;
+	margin-top: 5px; 
+	margin-bottom: 2px;
+
+}
+#About p{
+	padding: 30px 30px 30px 30px;
+	text-align: center;
+	font-size: 2vw;
+	color:#707070  ;
+}
+#About div{
+	color:#007190;
+	text-align: center;
+	margin-top: 5vw;
+	font-size: 3vw;
+}
+
+
+#Interests div{
+	color: #007190;
+	text-align: center;
+	margin-top: 5vw;
+	font-size: 3vw;
+}
+
+#Interests hr{
+	width: 50%;
+	background-color:#404040;
+
+	padding: 0;
+	margin-top: 5px; 
+	margin-bottom: 2px;
+	text-align: right;
+}
+
+#site-info div{
+	color:#007190;
+	text-align: center;
+	margin-top: 8vw;
+	font-size: 3vw;
+}
+
+#lang div{
+	color:#007190;
+	text-align: center;
+	margin-top: 8vw;
+	font-size: 3vw;
+}
+
+#site-info p{
+	padding: 30px 30px 30px 30px;
+	text-align: left;
+	font-size: 2vw;
+	color:#707070  ;
+}
+
+#lang li{
+	padding: 30px 30px 30px 30px;
+	text-align: left;
+	font-size: 2vw;
+	color:#707070  ;
+	line-height: 1vw;
+}
+#finder{
+	text-align: center;
+	color:#007190;
+	margin-top: 5vw;
+  	font-size: 3vw
+ }
+#footer{
+	background-color: #292929;
+	color: #D1D1D1;
+	padding-bottom: 10vw;
+}
+
+iframe {
+	height: 400px;
+}
+
+#article{
+	color:#007190;
+	text-align: center;
+	margin-top: 5vw;
+	font-size: 3vw;
+}
+
+article img{
+	height: 400px;
+}
+
+article a:hover{
+	color:#FFFF00  ;
+	text-decoration: none;
+}
+
+article a{
+	color:#FF6C00;
+}
+
+article a:visited{
+	color:#FF006C ;
+	text-decoration: none;
+}
+
+#slideshow{
+	color:#007190;
+	text-align: center;
+	margin-top: 5vw;
+	font-size: 3vw;
+}
+
+#posts{
+	border-radius: 15px;
+	box-shadow: 0 10px 10px 0 rgba(0,0,0,0.3), 0 0 0 1px rgba(0,0,0,0.08);
+	background-color: white;
+	padding: 2em 2em;
+	font-family: 'Roboto',sans-serif;
+	font-size: 1.2em;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+
+}
+
+#posttitle{
+	color: #016297;
+}
+
+#posts:hover{
+	border-radius: 15px;
+	box-shadow: 0 20px 20px 0 rgba(0,0,0,0.8), 0 0 0 1px rgba(0,0,0,0.08);
+	background-color: white;
+}
+
+
+/*======================media queries for small devices=================================*/
+
+@media (min-width:576px and max-width:767px)
+{
+
+.jumbotron{
+	margin:0;
+	padding:0;
+	background-image: url(../img/dubai.jpg);
+	background-repeat: no-repeat;
+	height:60vw;
+	background-size: 100%;
+	background-attachment: fixed;
+	width: 100%;
+}
+
+#heading{
+	color: white;
+	font-weight: bold;
+	margin-top: 55vw;
+	float:right;
+	text-align: center;
+	font-family: 'Roboto',sans-serif;
+	font-size: 8vw;
+}
+
+.dropdown-menu>li>a{
+	color: white;
+	text-align: center;
+}
+
+iframe {
+	height: 250px;
+}
+
+article img{
+	height: 250px;
+}
+
+}
+
+
+
+/*=========================media queries for extra small devices====================================================*/
+@media (max-width:575px)
+{
+
+.jumbotron{
+	margin:0;
+	padding:0;
+	background-image: url(../img/dubai576.jpg);
+	background-repeat: no-repeat;
+	height:60vw;
+	background-size: 100%;
+	background-attachment: fixed;
+	width: 100%;
+}
+
+#heading{
+	color: white;
+	float: right;
+	font-family: 'Roboto', sans-serif;
+	font-size: 11vw;
+	margin-top: 37vw;
+}
+
+#About div{
+	color:#007190;
+	text-align: center;
+	margin-top: 5vw;
+	font-size: 4.5vw;
+}
+#About p{
+	padding: 20px 20px 20px 20px;
+	text-align: center;
+	font-size: 3.5vw;
+	color:#707070  ;
+}
+
+#Interests div{
+	color: #007190;
+	text-align: center;
+	margin-top: 5vw;
+	font-size: 3.5vw;
+}
+
+#site-info div{
+	color:#007190;
+	text-align: center;
+	margin-top: 5vw;
+	font-size: 4.5vw;
+}
+#site-info p{
+	padding: 20px 20px 20px 20px;
+	text-align: left;
+	font-size: 3.5vw;
+	color:#707070  ;
+}
+
+.dropdown-menu>li>a{
+	text-align: center;
+	color: white;
+}
+
+#finder{
+	text-align: center;
+	color:#007190;
+	margin-top: 5vw;
+  	font-size: 4.5vw
+ }
+ iframe {
+	height: 200px;
+}
+
+
+article img{
+	height: 200px;
+}
+
+#article{
+	color:#007190;
+	text-align: center;
+	margin-top: 5vw;
+	font-size: 4.5vw;
+}
+
+#slideshow{
+	color:#007190;
+	text-align: center;
+	margin-top: 5vw;
+	font-size: 4.5vw;
+}
+
+}
+
+
+
+
+
+
+
