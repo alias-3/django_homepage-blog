@@ -10,12 +10,6 @@
 	width: 100%;
 }
 
-.back{
-	background-image: url(../img/back.png);
-	background-size: 20%;
-	color: black;
-}
-
 .affix {
       top: 0;
       width: 100%;
@@ -49,7 +43,8 @@
 
 #brand{
 	font-family: 'Roboto', sans-serif;
-	font-size: 2em;
+	font-size: 1.8em;
+	font-weight: normal;
 	color: white;
 }
 
