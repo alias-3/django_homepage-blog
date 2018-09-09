@@ -4,12 +4,13 @@
 <div style="font-size: 4em;color:#C1C1C1;font-family:'Roboto',sans-serif;">Blogs</div>
 
 	{% for post in posts %}
-	<div id="posts" class="col-md-12">
-	<h2 id="posttitle" align="center"><a href="{% url 'blogpost' pk=post.pk %}">{{ post.title }}</a></h2>
+	<a class="col-md-12 animated fadeInUp delay-2s slow" style="text-decoration: none;" href="{% url 'blogpost' pk=post.pk %}">
+	<div id="posts">
+	<h2 id="posttitle" align="center">{{ post.title }}</h2>
 		<div id="date">
 			Published on: {{ post.published_date }}
 		</div>
-	</div>
+	</div></a>
 	{% endfor %}
 
 {% endblock %}
