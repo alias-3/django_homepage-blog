@@ -26,12 +26,12 @@ a a:hover{
 
 #heading{
 	color: white;
-	font-weight: normal;
+	font-weight: lighter !important;
 	margin-top: 27vw;
 	float:right;
 	text-align: center;
 	font-family: 'Roboto',sans-serif;
-	font-size: 8vw;
+	font-size: 9.2vw;
 	margin-left: 15px;
 }
 
