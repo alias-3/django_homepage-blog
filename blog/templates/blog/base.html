@@ -14,7 +14,7 @@
     <script src="{%static 'js/jquery-3.2.1.min.js'%}"></script>
     <script src="{%static 'js/bootstrap.min.js'%}"></script>
       <link rel="shortcut icon" href="{%static 'img/favicon.ico'%}" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="{%static 'css/styles.css'%}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/style.css'%}">
   </head>
 
 <body>
@@ -46,6 +46,13 @@
       {% block content %}
       {% endblock %}
     </div>     
+
+    <script type="text/javascript">
+        $('.navbar-toggle').on('click',function(){
+    $('#myNavbar li').addClass('animated fadeInDown delay-0.2s fast');
+  })          
+  
+    </script>
 </body>
 
 </html>
