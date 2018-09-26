@@ -221,26 +221,29 @@
     
       var windowpos = $(window).scrollTop();
 
-      $('#About').addClass('animated fadeInUp delay-1s slow');  
+      $('#About').addClass('animated fadeInUp delay-0.5s slow');  
     
 
       if (windowpos >= $('#About').position().top) {
-        $('#Interests').addClass("animated fadeInUp delay-1s slow");
+        $('#Interests').addClass("animated fadeInUp delay-0.3s slow");
     
       } 
 
       if (windowpos >= $('#Interests').position().top) {
-        $('#site-inf').addClass("animated fadeInUp delay-1s slow");
+        $('#site-inf').addClass("animated fadeInUp delay-0.3s slow");
     
       }
 
       if (windowpos >= $('#site-inf').position().top) {
-        $('#slideshow').addClass("animated fadeInUp delay-1s slow");
-       
+        //if($(window).width()>575){
+          $('#slideshow').addClass("animated fadeInUp delay-0.3s slow");
+        //}
       }
 
       if (windowpos >= $('#slideshow').position().top) {
-       $('#find_me').addClass("animated fadeInUp delay-1s slow");
+        if($(window).width()>575){
+           $('#find_me').addClass("animated fadeInUp delay-0.3s slow");
+        }
       }
       
     });
