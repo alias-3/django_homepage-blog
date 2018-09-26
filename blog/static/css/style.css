@@ -91,9 +91,9 @@ a a:hover{
 	border-radius: 0;
 	padding-top: 3vw;
 }
-#About hr{
+hr{
 	width: 50%;
-	background-color: #404040 ;
+	background-color: #3B3B3B;
 	padding: 0;
 	margin-top: 5px; 
 	margin-bottom: 2px;
@@ -120,15 +120,6 @@ a a:hover{
 	font-size: 3vw;
 }
 
-#Interests hr{
-	width: 50%;
-	background-color:#404040;
-
-	padding: 0;
-	margin-top: 5px; 
-	margin-bottom: 2px;
-	text-align: right;
-}
 
 #site-info div{
 	color:#007190;
@@ -171,32 +162,8 @@ a a:hover{
 }
 
 iframe {
+	padding-top: 20px;
 	height: 400px;
-}
-
-#article{
-	color:#007190;
-	text-align: center;
-	margin-top: 5vw;
-	font-size: 3vw;
-}
-
-article img{
-	height: 400px;
-}
-
-article a:hover{
-	color:#FFFF00  ;
-	text-decoration: none;
-}
-
-article a{
-	color:#FF6C00;
-}
-
-article a:visited{
-	color:#FF006C ;
-	text-decoration: none;
 }
 
 #slideshow{
@@ -263,10 +230,7 @@ article a:visited{
 }
 
 iframe {
-	height: 250px;
-}
-
-article img{
+	padding-top: 20px;
 	height: 250px;
 }
 
@@ -293,41 +257,32 @@ article img{
 	color: white;
 	float: right;
 	font-family: 'Roboto', sans-serif;
-	font-size: 11vw;
+	font-size: 15vw;
 	margin-top: 37vw;
 }
 
-#About div{
-	color:#007190;
-	text-align: center;
-	margin-top: 5vw;
-	font-size: 4.5vw;
-}
-#About p{
-	padding: 20px 20px 20px 20px;
-	text-align: center;
-	font-size: 3.5vw;
-	color:#707070  ;
+hr {
+    width: 70%;
+    background-color:#3B3B3B;
+    padding: 0;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 2px;
 }
 
-#Interests div{
-	color: #007190;
-	text-align: center;
-	margin-top: 5vw;
-	font-size: 3.5vw;
-}
-
-#site-info div{
+#About div,#Interests div,#site-info div,#finder,#slideshow{
 	color:#007190;
-	text-align: center;
-	margin-top: 5vw;
-	font-size: 4.5vw;
-}
-#site-info p{
 	padding: 20px 20px 20px 20px;
 	text-align: left;
-	font-size: 3.5vw;
+	margin-top: 5vw;
+	font-size: 6vw;
+}
+#About p,#site-info p{
+	padding: 20px 20px 20px 20px;
+	text-align: left !important;
+	font-size: 5vw;
 	color:#707070  ;
+	text-overflow: clip;
 }
 
 .dropdown-menu>li>a{
@@ -335,33 +290,9 @@ article img{
 	color: white;
 }
 
-#finder{
-	text-align: center;
-	color:#007190;
-	margin-top: 5vw;
-  	font-size: 4.5vw
- }
  iframe {
 	height: 200px;
-}
-
-
-article img{
-	height: 200px;
-}
-
-#article{
-	color:#007190;
-	text-align: center;
-	margin-top: 5vw;
-	font-size: 4.5vw;
-}
-
-#slideshow{
-	color:#007190;
-	text-align: center;
-	margin-top: 5vw;
-	font-size: 4.5vw;
+	padding-top: 20px;
 }
 
 }
