@@ -147,8 +147,8 @@
 
 
 
-<div class="container-fluid" id="edu">
-  <div id="slideshow">EDUCATION</div><hr>
+<div class="container-fluid" id="slideshow">
+  <div id="education">EDUCATION</div><hr>
   <div id="myCarousel" class="carousel slide" style="border-radius: 20px" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -195,9 +195,10 @@
   </div>
 </div>
 
-
+<div id="find_me">
 <div id="finder">FIND ME</div><hr>
 <div class="container-fluid"><a href="https://www.google.co.in/maps/place/MIT+College+of+Engineering,+Rambaug+Colony,+Kothrud,+Pune,+Maharashtra+411038/@18.5185069,73.8144832,18z/data=!4m5!3m4!1s0x3bc2bfa2515ce741:0x349ddf824466170d!8m2!3d18.5187098!4d73.815807"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1891.6149870102047!2d73.81448317488463!3d18.5185068835636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfa2515ce741%3A0x349ddf824466170d!2sMIT+College+of+Engineering%2C+Rambaug+Colony%2C+Kothrud%2C+Pune%2C+Maharashtra+411038!5e0!3m2!1sen!2sin!4v1516783888888" width=100% height="350" frameborder="0" allowfullscreen></iframe></a></div>
+</div>
 
 <div class="container-fluid" id="footer" style="margin-top: 5vw">
   <div class="container">
@@ -234,12 +235,12 @@
       }
 
       if (windowpos >= $('#site-inf').position().top) {
-        $('#edu').addClass("animated fadeInUp delay-1s slow");
+        $('#slideshow').addClass("animated fadeInUp delay-1s slow");
        
       }
 
-      if (windowpos >= $('#edu').position().top) {
-       $('#finder').addClass("animated fadeInUp delay-1s slow");
+      if (windowpos >= $('#slideshow').position().top) {
+       $('#find_me').addClass("animated fadeInUp delay-1s slow");
       }
       
     });

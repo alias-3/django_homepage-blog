@@ -105,16 +105,8 @@ hr{
 	font-size: 2vw;
 	color:#707070  ;
 }
-#About div{
+#About div,#Interests div,#education{
 	color:#007190;
-	text-align: center;
-	margin-top: 5vw;
-	font-size: 3vw;
-}
-
-
-#Interests div{
-	color: #007190;
 	text-align: center;
 	margin-top: 5vw;
 	font-size: 3vw;
@@ -173,12 +165,6 @@ iframe {
 	height: 400px;
 }
 
-#slideshow{
-	color:#007190;
-	text-align: center;
-	margin-top: 5vw;
-	font-size: 3vw;
-}
 
 #posts{
 	border-radius: 15px;
@@ -276,7 +262,7 @@ hr {
     margin-bottom: 2px;
 }
 
-#About div,#Interests div,#site-info div,#finder,#slideshow{
+#About div,#Interests div,#site-info div,#finder,#education{
 	color:#007190;
 	padding: 20px 20px 20px 20px;
 	text-align: left;
