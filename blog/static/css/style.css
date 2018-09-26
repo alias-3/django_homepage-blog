@@ -149,6 +149,11 @@ hr{
 	color:#707070  ;
 	line-height: 1vw;
 }
+
+#myCarousel{
+	margin-top: 2.5em;
+}
+
 #finder{
 	text-align: center;
 	color:#007190;
@@ -156,13 +161,15 @@ hr{
   	font-size: 3vw
  }
 #footer{
-	background-color: #292929;
+	background-color: black;
+	font-family: 'Roboto',sans-serif;
 	color: #D1D1D1;
 	padding-bottom: 10vw;
+	font-size: 1.1em;
 }
 
 iframe {
-	padding-top: 20px;
+	margin-top: 2.5em;
 	height: 400px;
 }
 
@@ -230,7 +237,6 @@ iframe {
 }
 
 iframe {
-	padding-top: 20px;
 	height: 250px;
 }
 
@@ -289,10 +295,15 @@ hr {
 	text-align: center;
 	color: white;
 }
-
+	
  iframe {
 	height: 200px;
-	padding-top: 20px;
+}
+#footer{
+	background-color: black;
+	color: #D1D1D1;
+	padding-bottom: 10vw;
+	font-size: 14px;
 }
 
 }
