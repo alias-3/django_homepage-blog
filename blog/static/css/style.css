@@ -204,8 +204,7 @@ iframe {
 
 @media (min-width:576px and max-width:767px)
 {
-
-	  body,html{
+  body,html{
   width: 100% !important;
   margin: 0px !important;
   padding: 0px !important;
@@ -218,7 +217,7 @@ iframe {
 	padding:0;
 	background-image: url(../img/dubai.jpg);
 	background-repeat: no-repeat;
-	height:60vw;
+	height:80vh;
 	background-size: 100%;
 	background-attachment: fixed;
 	width: 100%;
@@ -298,7 +297,7 @@ hr {
 	text-align: left !important;
 	font-size: 5vw;
 	color:#707070  ;
-	text-overflow: clip;
+	overflow-wrap:break-word; 
 }
 
 .dropdown-menu>li>a{
