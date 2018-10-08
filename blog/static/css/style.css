@@ -37,7 +37,7 @@ a a:hover{
 	text-align: center;
 	font-family: 'Roboto',sans-serif;
 	font-size: 9.2vw;
-	margin-left: 15px;
+	margin-right: 30px
 }
 
 
@@ -125,15 +125,16 @@ hr{
 	font-size: 3vw;
 }
 
-#site-info,#lang{
-	height: 50vw ;
-}
 
 #lang div{
 	color:#007190;
 	text-align: center;
 	margin-top: 7vw;
 	font-size: 3vw;
+}
+
+#site-info{
+	margin-left: 20px;
 }
 
 #site-info p{
@@ -262,7 +263,7 @@ iframe {
 	padding:0;
 	background-image: url(../img/dubai576.jpg);
 	background-repeat: no-repeat;
-	height:60vw;
+	height:45vh;
 	background-size: 100%;
 	background-attachment: fixed;
 	width: 100%;
@@ -273,7 +274,8 @@ iframe {
 	float: right;
 	font-family: 'Roboto', sans-serif;
 	font-size: 15vw;
-	margin-top: 37vw;
+	margin-top: 30vh;
+	margin-right: 15px;
 }
 
 hr {
@@ -305,9 +307,6 @@ hr {
 	color: white;
 }
 
-#site-info{
-	height: 80vh;
-}
 	
  iframe {
 	height: 200px;
