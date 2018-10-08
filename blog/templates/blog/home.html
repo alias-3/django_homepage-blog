@@ -72,8 +72,8 @@
     <div id="Interests" class="container-fluid" style="background-color:#F4F4F4;padding-bottom: 80px">    
        <div>INTERESTS</div>
        <hr>
-       <div class="row">
-          <div class="col-xs-4 col-md-4 interestrow" style="font-family: 'Courgette', cursive;text-align: left;color: black">
+       <div style="margin-top: 40px;">
+          <div class="col-xs-4 col-md-4" style="font-family: 'Courgette', cursive;text-align: left;color: black">
           <img src="{%static 'img/painting.png'%}" style="width: 40%; height: 40%"> Painting
           </div>
           <div class="col-xs-4 col-md-4" style="font-family: 'Courgette', cursive;text-align: left;color: black">
@@ -94,18 +94,7 @@
         </div>
       </div>     
     </div>
-      
-    <!--site info class="container animated fadeInUp delay-5s slow"-->
-<div id="site-inf" class="container-fluid" style="background-color: #FAFAFA" >
-  <div class="row">
-  <div id="site-info" class="container col-xs-12 col-md-8 col-lg-8" style="margin-top:0; background:#ECFFD8;border-radius: 0px;opacity: 0.8;padding:60px" >
-    <div>Site-Info</div><hr><p style="text-align: center">This Html site is styled by Css and developed on the foundation of Bootstrap and Django(python) framework. Prominent features include real time blog editing and creating for authenticated user(here admin),navbar,collapsible menu,button,jumbotron,containers,direct dial telephone,login form,glyphicon,modal,embedded video,slideshow,dropdown menu,embedded map and others.The page is optimized for both desktop and mobile interface and is under development for adding more django apps and functionalities.</p>
-  </div>
-  <div  id="lang" class="container col-lg-4 col-md-4 visible-lg visible-md"><div>Framework and Languages</div><hr>
-    <ul><li>HTML</li><li>CSS</li><li>BOOTSTRAP</li><li>JS, jQuery</li><li>DJANGO</li></ul>
-  </div>  
-  </div>
-</div>
+   
 
   <!--kogin modal-->
   <div class="modal fade" id="myModal" role="dialog">
@@ -146,7 +135,7 @@
 
 
 
-<div class="container-fluid" id="slideshow">
+<div class="container-fluid" id="slideshow" style="padding: 0">
   <div id="education">EDUCATION</div><hr>
   <div id="myCarousel" class="carousel slide" style="margin-left: 0" data-ride="carousel">
     <!-- Indicators -->
@@ -194,6 +183,27 @@
   </div>
 </div>
 
+
+<div id="site-inf" class="container-fluid" style="padding:0" >
+
+  <div id="site-info" class="col-xs-12 col-md-8 col-lg-8" style="margin:0; background:#ECFFD8;opacity:1;" >
+    <div>Site-Info</div><hr><p>This Html site is styled by Css and developed on the foundation of Bootstrap and Django(python) framework. Prominent features include real time blog editing and creating for authenticated user(here admin),navbar,collapsible menu,button,jumbotron,containers,direct dial telephone,login form,glyphicon,modal,embedded video,slideshow,dropdown menu,embedded map and others.The page is optimized for both desktop and mobile interface and is under development for adding more django apps and functionalities.</p>
+  </div>
+  <div  id="lang" class="col-lg-4 col-md-4 visible-lg visible-md" style="background-color: #FAFAFA;">
+    <div>Framework and Languages</div>
+    <hr>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>BOOTSTRAP</li>
+      <li>JS, jQuery</li>
+      <li>DJANGO</li>
+    </ul>
+  </div>  
+</div>
+
+
+
 <div id="find_me">
 <div id="finder">FIND ME</div><hr>
 <div class="container-fluid"><a href="https://www.google.co.in/maps/place/MIT+College+of+Engineering,+Rambaug+Colony,+Kothrud,+Pune,+Maharashtra+411038/@18.5185069,73.8144832,18z/data=!4m5!3m4!1s0x3bc2bfa2515ce741:0x349ddf824466170d!8m2!3d18.5187098!4d73.815807"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1891.6149870102047!2d73.81448317488463!3d18.5185068835636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfa2515ce741%3A0x349ddf824466170d!2sMIT+College+of+Engineering%2C+Rambaug+Colony%2C+Kothrud%2C+Pune%2C+Maharashtra+411038!5e0!3m2!1sen!2sin!4v1516783888888" width=100% height="350" frameborder="0" allowfullscreen></iframe></a></div>
@@ -213,7 +223,24 @@
  </div>
  </div>
 
- <script>
+<script type="text/javascript">
+  $(document).ready(function() { 
+    $('.navbar-toggle').on('click',function(){
+      $('#myNavbar li').addClass('animated zoomIn delay-0.3s slow');
+    });
+  })
+</script>
+ 
+
+
+
+
+</body>
+</html>
+
+<!--
+
+<script>
   $(document).ready(function() { 
 
   $('.navbar-toggle').on('click',function(){
@@ -254,13 +281,4 @@
    
 
 
- </script>
-
-
-
-
-</body>
-</html>
-
-
-
+ </script>-->

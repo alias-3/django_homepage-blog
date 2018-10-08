@@ -50,7 +50,7 @@ a a:hover{
 }
 
 #myNavbar{
-	text-align: center;
+	text-align: left;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -125,10 +125,14 @@ hr{
 	font-size: 3vw;
 }
 
+#site-info,#lang{
+	height: 50vw ;
+}
+
 #lang div{
 	color:#007190;
 	text-align: center;
-	margin-top: 8vw;
+	margin-top: 7vw;
 	font-size: 3vw;
 }
 
@@ -201,6 +205,14 @@ iframe {
 @media (min-width:576px and max-width:767px)
 {
 
+	  body,html{
+  width: 100% !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  overflow-x: hidden !important;
+}
+
+
 .jumbotron{
 	margin:0;
 	padding:0;
@@ -239,7 +251,7 @@ iframe {
 @media (max-width:575px)
 {
 
-  body,html{
+  body{
   width: 100% !important;
   margin: 0px !important;
   padding: 0px !important;
@@ -292,6 +304,10 @@ hr {
 .dropdown-menu>li>a{
 	text-align: center;
 	color: white;
+}
+
+#site-info{
+	height: 80vh;
 }
 	
  iframe {
