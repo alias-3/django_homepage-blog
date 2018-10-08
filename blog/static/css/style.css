@@ -1,4 +1,9 @@
-
+      body,html{
+  width: 100% !important;
+   margin: 0px !important;
+  padding: 0px !important;
+  overflow-x: hidden !important;
+}
 .jumbotron{
 	margin:0;
 	padding:0;
@@ -233,6 +238,13 @@ iframe {
 /*=========================media queries for extra small devices====================================================*/
 @media (max-width:575px)
 {
+
+      body,html{
+  width: 100% !important;
+   margin: 0px !important;
+  padding: 0px !important;
+  overflow-x: hidden !important;
+}
 
 .jumbotron{
 	margin:0;
