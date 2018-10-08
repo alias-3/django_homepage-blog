@@ -1,4 +1,4 @@
-      body,html{
+	body,html{
   width: 100% !important;
    margin: 0px !important;
   padding: 0px !important;
@@ -239,9 +239,9 @@ iframe {
 @media (max-width:575px)
 {
 
-      body,html{
+  body,html{
   width: 100% !important;
-   margin: 0px !important;
+  margin: 0px !important;
   padding: 0px !important;
   overflow-x: hidden !important;
 }
